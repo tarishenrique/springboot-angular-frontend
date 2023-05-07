@@ -1,4 +1,30 @@
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+    <ul class="nav navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/">Inicio</a>
+        </li>
+        <li class="nav-item">
+            <a routerLink="employees" routerLinkActive="active" class="nav-link">Lista de Empregados</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/login">Login</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/register">Registro</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/admin">Admin</a>
+        </li>
+    </ul>
+</nav>
+
 <h1 class="text-center" > {{title}} </h1>
 <div class="container">
-    <app-employee-list></app-employee-list>
+    <router-outlet></router-outlet>
 </div>
+
+<footer class="footer" >
+    <div class="container">
+        <span >&copy; 2023 Taris Henrique @TRH INFO</span>
+    </div>
+</footer>
