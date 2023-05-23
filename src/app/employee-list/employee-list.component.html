@@ -15,12 +15,9 @@
             <td> {{ employee.lastName }} </td>
             <td> {{ employee.emailid }} </td>
             <td>
-                <button (click) = "updateEmployee(employee.id)" class="btn btn-info">
-                    Atualizar
-                </button>
-                <button (click) = "deleteEmployee(employee.id)" class="btn btn-danger">
-                    Deletar
-                </button>
+                <button (click) = "updateEmployee(employee.id)" class="btn btn-info"> Atualizar </button>
+                <button (click) = "deleteEmployee(employee.id)" class="btn btn-danger" style="margin-left: 10px;"> Deletar </button>
+                <button (click) = "employeeDetails(employee.id)" class="btn btn-success" style="margin-left: 10px;"> Visualizar </button>
             </td>
 
         </tr>
